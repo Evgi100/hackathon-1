@@ -183,3 +183,11 @@ $posts.on('click', '.remove-comment', function() {
 
     app.deleteComment(postIndex, commentIndex);
 });
+
+
+//Toggle the shopping-cart on/off
+$('.view-cart').on('click', function () {
+    shoppingCart = $('.shopping-cart');
+    shoppingCart.toggle();
+  });
+  
