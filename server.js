@@ -6,7 +6,7 @@ mongoose.connect('mongodb://localhost/wayToWinDB', function() {
     console.log("DB connection established!!!");
 })
 
-var Story = require('./models/ storySchema');
+var Story = require('./models/postModel');
 
 var app = express();
 app.use(express.static('public'));
