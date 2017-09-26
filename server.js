@@ -47,7 +47,6 @@ app.post('/post/:id/comments', function(req, res) {
         if (err) { return console.log("Error delete") }
         post.comments.push(req.body)
         post.save();
-        console.log(post)
         res.send(post);
     });
 });
@@ -55,8 +54,6 @@ app.post('/post/:id/comments', function(req, res) {
 // 5) to handle deleting a comment from a post
 
 app.delete('/posts/:id/comments/:commentID', function(req, res) {
-    console.log(req.params.id)
-    console.log(req.params.commentID)
     Post.findOneAndUpdate({ _id: req.params.id }, { $pull: { comments: { _id: req.params.commentID } } }, function(err, result) {
         console.log(result)
         res.send(result)
