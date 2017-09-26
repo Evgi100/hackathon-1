@@ -1,3 +1,10 @@
+$('a').click(function() {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 500);
+    return false;
+});
+
 var SpacebookApp = function() {
 
     var posts = [];
@@ -186,8 +193,7 @@ $posts.on('click', '.remove-comment', function() {
 
 
 //Toggle the shopping-cart on/off
-$('.view-cart').on('click', function () {
+$('.view-cart').on('click', function() {
     shoppingCart = $('.shopping-cart');
     shoppingCart.toggle();
-  });
-  
+});

@@ -1,3 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav {
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    text-align: center;
+    margin: 0;
+}
+
+nav li a {
+    line-height: 50px;
+    text-decoration: none;
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .post {
     padding: 20px 0;
 }

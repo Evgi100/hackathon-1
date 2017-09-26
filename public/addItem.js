@@ -1,3 +1,4 @@
+// var source = $("#entry-template").html();
 var itemTemplate = Handlebars.compile($('#item-template').html());
 
 $('.btn-submit-item').click(function() {
