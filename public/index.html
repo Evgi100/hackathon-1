@@ -4,68 +4,35 @@
 <head>
     <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <title>Spacebook</title>
+    <title>SUCCESS STORIES</title>
 </head>
 
 <body>
-<nav class="navbar navbar-default         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-              aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">SHOPPING CART</a>
-          </div>
-    
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="view-cart" data-toggle="dropdown" role="button">Shopping Cart <i class="fa fa-shopping-cart"></i></a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-      </nav>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="page-header">
-                    <h1>Spacebook</h1>
-                </div>
-                <div class="posts"></div>
-                <form class="post-form">
-                    <h3>Add a New Post</h3>
-                    <div class="form-group">
-                        <input class="form-control" type="text" id="postText" placeholder="Enter Post Text" />
-                    </div>
-                    <button type="button" id="addpost" class="btn btn-primary">Post</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#night-life">Night Life</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#apartments">Apartments</a></li>
+        </ul>
+    </nav>
+
 
     <!-- Trigger the modal with a button -->
     <button type="button" class="btn btn-info btn-lg pull-right btn-item-form" data-toggle="modal" data-target="#myModal">Add New Item</button>
 
+
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog ">
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Submit your item here</h4>
+                <div class="modal-header ">
+                    <button type="button " class="close " data-dismiss="modal ">&times;</button>
+                    <h4 class="modal-title ">Submit your item here</h4>
                 </div>
+
                 <div class="modal-body">
                     <input id="new-name" type="text" placeholder="Name"> <br>
                     <input id="new-story-title" type="text" placeholder="Story Title"> <br>
@@ -73,55 +40,75 @@
                     <input id="new-story" type="text" placeholder="Tell your Story"> <br>
                     <input id="new-email" type="text" placeholder="Email"> <br>
                     <input id="new-phone number" type="text" placeholder="Phone"> <br>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-submit-item" data-dismiss="modal">Submit</button>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-default btn-submit-item " data-dismiss="modal ">Submit</button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-6 col-md-offset-3 ">
+                <div class="page-header ">
+                    <h1>Success Stories!</h1>
+                </div>
+                <div class="posts "></div>
+                <form class="post-form ">
+                    <h3>Add a New Post</h3>
+                    <div class="form-group ">
+                        <input class="form-control " type="text " id="postText " placeholder="Enter Post Text " />
+                    </div>
+                    <button type="button " id="addpost " class="btn btn-primary ">Post</button>
+                </form>
             </div>
         </div>
     </div>
 
 
-    <script id="post-template" type="text/x-handlebars-template">
-        <div class="post" data-id={{_id}}> {{text}} <a class="toggle-comments" href="#"> Comments </a>
-            <button type="button" class="btn btn-danger remove-post">Remove Post</button>
+    <section class="food">food</section>
+
+    <script id="post-template " type="text/x-handlebars-template ">
+        <div class="post " data-id={{_id}}> {{text}} <a class="toggle-comments " href="# "> Comments </a>
+            <button type="button " class="btn btn-danger remove-post ">Remove Post</button>
             <div></div>
-            <div class="comments-container">
-                <ul class="comments-list"></ul>
-                <input class="form-control name" type="text" placeholder="Name" />
-                <input class="form-control comment" type="text" placeholder="Comment" />
-                <button type="button" class="btn btn-sm btn-primary add-comment">Post Comment</button>
+            <div class="comments-container ">
+                <ul class="comments-list "></ul>
+                <input class="form-control name " type="text " placeholder="Name " />
+                <input class="form-control comment " type="text " placeholder="Comment " />
+                <button type="button " class="btn btn-sm btn-primary add-comment ">Post Comment</button>
             </div>
         </div>
     </script>
-    <script id="comment-template" type="text/x-handlebars-template">
-        <li class="comment">{{text}} - {{user}}
-            <button type="button" class="btn btn-sm btn-danger remove-comment">Remove Comment</button>
+    <script id="comment-template " type="text/x-handlebars-template ">
+        <li class="comment ">{{text}} - {{user}}
+            <button type="button " class="btn btn-sm btn-danger remove-comment ">Remove Comment</button>
         </li>
     </script>
 
-    <script id="item-template" type="text/x-handlebars-template">
-        <div class="col-md-4">
-            <div class="card-container">
-                <div class="card item" item data-name="{{ name }}" data-price="{{ price }}">
-                    <div class="pricebox">
-                        <p class="price"> ${{ price }} </p>
+    <script id="item-template" type="text/x-handlebars-template ">
+        <div class="col-md-4 ">
+            <div class="card-container ">
+                <div class="card item " item data-name="{{ name }} " data-price="{{ price }} ">
+                    <div class="pricebox ">
+                        <p class="price "> ${{ price }} </p>
                     </div>
-                    <div class="buybox">
-                        <p class="add-to-cart"> ADD TO CART </p>
+                    <div class="buybox ">
+                        <p class="add-to-cart "> ADD TO CART </p>
                     </div>
-                    <div class="card-inner">
-                        <img src="{{ picture }}" class="proimage" />
+                    <div class="card-inner ">
+                        <img src="{{ picture }} " class="proimage " />
                     </div>
                 </div>
             </div>
         </div>
     </script>
-    <script src="jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
-    <script src="handlebars/dist/handlebars.js"></script>
-    <script src="additem.js"></script>
-    <script src="main.js"></script>
+    <script src="jquery/dist/jquery.js "></script>
+    <script type="text/javascript " src="bootstrap/dist/js/bootstrap.js "></script>
+    <script src="handlebars/dist/handlebars.js "></script>
+    <script src="additem.js "></script>
+    <script src="main.js "></script>
 </body>
 
 </html>
