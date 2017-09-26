@@ -2,11 +2,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/spacebookDB', function() {
+mongoose.connect('mongodb://localhost/wayToWinDB', function() {
     console.log("DB connection established!!!");
 })
 
-var Post = require('./models/postModel');
+var Story = require('./models/ storySchema');
 
 var app = express();
 app.use(express.static('public'));

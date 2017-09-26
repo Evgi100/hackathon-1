@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-mongoose.connect('mongodb://localhost/spacebook');
+mongoose.connect('mongodb://localhost/wayToWin');
 //design the two schema below and use sub docs 
 //to define the relationship between posts and comments
 
@@ -13,13 +13,19 @@ var commentSchema = new Schema({
 });
 
 
-var postSchema = new Schema({
-    text: String,
-    comments: [commentSchema]
+var storySchema = new Schema({
+    name:String,
+    title:String,
+    description:String,
+    text:String,
+    email:String,
+    phone:String,
+    comments: [commentSchema],
+
 });
 
-var Post = mongoose.model('post', postSchema)
+var Story = mongoose.model('story', storySchema)
 
 
 
-module.exports = Post;
+module.exports = Story;
