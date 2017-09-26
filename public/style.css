@@ -11,7 +11,7 @@ nav li {
 }
 
 nav {
-    background-color: #333333;
+    background-color: green;
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,6 +33,10 @@ nav li a {
     font-family: 'Roboto', sans-serif;
 }
 
+.page-header {
+    margin-top: 100px;
+}
+
 .post {
     padding: 20px 0;
 }
@@ -47,4 +51,8 @@ nav li a {
 
 .comments-container {
     display: none;
+}
+
+.btn-item-form {
+    width: 200px;
 }

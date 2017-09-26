@@ -10,16 +10,16 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#food">Food</a></li>
-            <li><a href="#night-life">Night Life</a></li>
-            <li><a href="#jobs">Jobs</a></li>
-            <li><a href="#apartments">Apartments</a></li>
+            <li><a href="#success-stories">Success Stories</a></li>
+            <li><a href="#contact-us">Contact US</a></li>
+            <li><a href="#search">Search</a></li>
+
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg pull-right btn-item-form" data-toggle="modal" data-target="#myModal">Add Your Success Story</button>
         </ul>
     </nav>
 
 
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg pull-right btn-item-form" data-toggle="modal" data-target="#myModal">Add New Item</button>
 
 
     <!-- Modal -->
@@ -40,28 +40,10 @@
                     <input id="new-story" type="text" placeholder="Tell your Story"> <br>
                     <input id="new-email" type="text" placeholder="Email"> <br>
                     <input id="new-phone number" type="text" placeholder="Phone"> <br>
-
                 </div>
                 <div class="modal-footer ">
                     <button type="button " class="btn btn-default btn-submit-item " data-dismiss="modal ">Submit</button>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="container ">
-        <div class="row ">
-            <div class="col-md-6 col-md-offset-3 ">
-                <div class="page-header ">
-                    <h1>Success Stories!</h1>
-                </div>
-                <div class="posts "></div>
-                <form class="post-form ">
-                    <h3>Add a New Post</h3>
-                    <div class="form-group ">
-                        <input class="form-control " type="text " id="postText " placeholder="Enter Post Text " />
-                    </div>
-                    <button type="button " id="addpost " class="btn btn-primary ">Post</button>
-                </form>
             </div>
         </div>
     </div>
@@ -71,7 +53,7 @@
     <script id="post-template" type="text/x-handlebars-template">
         <div class="post" data-id={{_id}}>{{name}}-{{title}}-{{description}}-{{text}}-{{email}}-{{phone}}<a class="toggle-comments" href="#"> Comments </a>
 
-    <section class="food">food</section>
+            <section class="food">food</section>
 
             <div></div>
             <div class="comments-container ">
