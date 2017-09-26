@@ -1,28 +1,28 @@
 {
-  "name": "hackathon-1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "postModel.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YZeitler/hackathon-1.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YZeitler/hackathon-1/issues"
-  },
-  "homepage": "https://github.com/YZeitler/hackathon-1#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "bootstrap": "^3.3.7",
-    "express": "^4.15.5",
-    "handlebars": "^4.0.10",
-    "jquery": "^3.2.1",
-    "mongoose": "^4.11.13"
-  }
+    "name": "hackathon-1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YZeitler/hackathon-1.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/YZeitler/hackathon-1/issues"
+    },
+    "homepage": "https://github.com/YZeitler/hackathon-1#readme",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "bootstrap": "^3.3.7",
+        "express": "^4.15.5",
+        "handlebars": "^4.0.10",
+        "jquery": "^3.2.1",
+        "mongoose": "^4.11.13"
+    }
 }
