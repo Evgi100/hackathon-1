@@ -52,9 +52,11 @@ nav li a {
 .comments-container {
     display: none;
 }
+
 .row {
     margin-top: 10px;
 }
+
 .btn-item-form {
     display: block;
     align-items: center;
@@ -63,45 +65,58 @@ nav li a {
     margin-right: 17%;
     padding: 60px 16px;
     font-size: 22px;
-    margin-top:1.5%;
+    margin-top: 1.5%;
     z-index: 2;
 }
 
 .mySlides {
     position: fixed;
     width: 100%;
-    height:100%;
+    height: 100%;
     top: 50px;
     left: 0px;
-    z-index: 0; 
+    z-index: 0;
 }
+
 .slider {
     height: 41px;
     font-size: 16px;
     overflow: hidden;
     background-color: #f5f5f5;
-  }
-  
-  .slider div, .slider div p {
+}
+
+.slider div,
+.slider div p {
     margin: 0;
     padding: 0;
-  }
-  
-  .slider div {
-    animation: slide 10s 2s infinite;
-  }
-  
-  @keyframes slide {
-    0% { margin-top: 0; }
-    25% { margin-top: -18px; }
-    50% { margin-top: -36px; }
-    75% { margin-top: -54px; }
-    100% { margin-top: 0; }
-  }
+}
 
-  .container-table {
+.slider div {
+    animation: slide 10s 2s infinite;
+}
+
+@keyframes slide {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -18px;
+    }
+    50% {
+        margin-top: -36px;
+    }
+    75% {
+        margin-top: -54px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.container-table {
     display: table;
 }
+
 .vertical-center-row {
     vertical-align: middle;
 }
@@ -109,6 +124,20 @@ nav li a {
 .modal-input {
     margin-bottom: 10px;
 }
+
 .challenge {
     height: 100px;
 }
+
+.main-footer {
+    text-align: center;
+    padding: 2em 0;
+    background: #d9e4ea;
+}
+
+.wrap {
+    min-height: calc(100vh - 89px)
+}
+
+
+/*Sticky Footer is making sure that the footer is on the bottom of the page.  the 100 viewpoint height is 1% of the page.  the 89px is the size of the actual footer.  Therefore, for this formula in the future, make sure you use the size of the footer.  */

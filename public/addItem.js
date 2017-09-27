@@ -1,8 +1,8 @@
-// var source = $("#entry-template").html();
+
 var itemTemplate = Handlebars.compile($('#item-template').html());
 
 $('.btn-submit-item').click(function() {
-
+console.log("patients chico");
     addRow();
 
     var $lastRow = $('.shopping-cart-table').find('.row').last();
