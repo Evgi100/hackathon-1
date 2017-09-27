@@ -1,7 +1,7 @@
 // var source = $("#entry-template").html();
 var itemTemplate = Handlebars.compile($('#item-template').html());
 
-$('.btn-submit-item').click(function() {
+$('.btn-submit-item').click(function () {
 
     addRow();
 
@@ -19,9 +19,12 @@ function addRow() {
 
 function newItemObj() {
     var itemObj = {
-        name: $('#new-item-name').val(),
-        price: $('#new-item-price').val(),
-        picture: $('#new-item-pic').val()
+        name: $('#new-name').val(),
+        title: $('#new-story-title').val(),
+        challenge: $('new-routine').val(),
+        story: $('#new-story').val(),
+        email: $('#new-email').val(),
+        number: $('#new-phone-number').val()
     }
     return itemObj;
 }
