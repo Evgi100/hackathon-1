@@ -120,11 +120,6 @@ $('#addpost').on('click', function () {
 
 var $posts = $(".posts");
 
-$posts.on('click', '.remove-post', function () {
-    // var index = $(this).closest('.post').index();
-    var id = $(this).closest('.post').data().id;
-    app.removePost(id);
-});
 
 $posts.on('click', '.toggle-comments', function () {
     var $clickedPost = $(this).closest('.post');
@@ -149,13 +144,6 @@ $posts.on('click', '.add-comment', function () {
     $user.val("");
 });
 
-$posts.on('click', '.remove-comment', function () {
-    var $commentsList = $(this).closest('.post').find('.comments-list');
-    var postIndex = $(this).closest('.post').index();
-    var commentIndex = $(this).closest('.comment').index();
-
-    app.deleteComment(postIndex, commentIndex);
-});
 
 
 //Toggle the shopping-cart on/off
