@@ -16,8 +16,8 @@ var commentSchema = new Schema({
 var storySchema = new Schema({
     name:String,
     title:String,
-    description:String,
-    text:String,
+    challenge:String,
+    story:String,
     email:String,
     phone:String,
     comments: [commentSchema],
