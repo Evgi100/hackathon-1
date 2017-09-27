@@ -54,7 +54,12 @@ nav li a {
 }
 
 .btn-item-form {
-    width: 200px;
+    width: 29%;
+    margin-right: 35.5%;
+    padding: 60px 16px;
+    font-size: 22px;
+    margin-top:1.5%;
+    z-index: 2;
 }
 
 .mySlides {
@@ -66,10 +71,10 @@ nav li a {
     z-index: 0; 
 }
 .slider {
-    height: 18px;
+    height: 41px;
     font-size: 16px;
     overflow: hidden;
-    background-color: lightgrey;
+    background-color: #f5f5f5;
   }
   
   .slider div, .slider div p {

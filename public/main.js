@@ -1,11 +1,11 @@
-$('a').click(function() {
+$('a').click(function () {
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
     }, 500);
     return false;
 });
 
-var SpacebookApp = function() {
+var SpacebookApp = function () {
 
     var posts = [];
 
@@ -14,11 +14,11 @@ var SpacebookApp = function() {
         $.ajax({
             method: "GET",
             url: '/post',
-            success: function(data) {
+            success: function (data) {
                 posts = (data);
                 _renderPosts();
             },
-            error: function(jqXHR, textStatus, errorThrown) {
+            error: function (jqXHR, textStatus, errorThrown) {
                 console.log(textStatus);
             }
         });
@@ -47,11 +47,11 @@ var SpacebookApp = function() {
             method: "POST",
             url: '/post/',
             data: postData,
-            success: function(data) {
+            success: function (data) {
                 posts.push(data);
                 _renderPosts();
             },
-            error: function(jqXHR, textStatus, errorThrown) {
+            error: function (jqXHR, textStatus, errorThrown) {
                 console.log(textStatus);
             }
         });
@@ -70,41 +70,41 @@ var SpacebookApp = function() {
         }
     }
 
-    
 
-    var addComment = function(newComment, postIndex) {
+
+    var addComment = function (newComment, postIndex) {
         var id = posts[postIndex]._id //  THE ID of the current post that was clicked on.
 
         $.ajax({
             method: "POST",
             url: '/post/' + id + '/comments',
             data: newComment,
-            success: function(savedPost) {
+            success: function (savedPost) {
                 console.log(savedPost)
-                    // posts[postIndex].comments.push(savedComment);
+                // posts[postIndex].comments.push(savedComment);
                 posts[postIndex] = savedPost;
                 _renderPosts();
             },
-            error: function(jqXHR, textStatus, errorThrown) {
+            error: function (jqXHR, textStatus, errorThrown) {
                 console.log(textStatus);
             }
         });
     };
 
-   
+
     _fetchData();
 
     return {
         addPost: addPost,
         addComment: addComment,
-        posts:posts
+        posts: posts
     };
 };
 
 var app = SpacebookApp();
 
 
-$('#addpost').on('click', function() {
+$('#addpost').on('click', function () {
     var $input = $("#postText");
     if ($input.val() === "") {
         alert("Please enter text!");
@@ -120,18 +120,18 @@ $('#addpost').on('click', function() {
 
 var $posts = $(".posts");
 
-$posts.on('click', '.remove-post', function() {
+$posts.on('click', '.remove-post', function () {
     // var index = $(this).closest('.post').index();
     var id = $(this).closest('.post').data().id;
     app.removePost(id);
 });
 
-$posts.on('click', '.toggle-comments', function() {
+$posts.on('click', '.toggle-comments', function () {
     var $clickedPost = $(this).closest('.post');
     $clickedPost.find('.comments-container').toggleClass('show');
 });
 
-$posts.on('click', '.add-comment', function() {
+$posts.on('click', '.add-comment', function () {
 
     var $comment = $(this).siblings('.comment');
     var $user = $(this).siblings('.name');
@@ -149,7 +149,7 @@ $posts.on('click', '.add-comment', function() {
     $user.val("");
 });
 
-$posts.on('click', '.remove-comment', function() {
+$posts.on('click', '.remove-comment', function () {
     var $commentsList = $(this).closest('.post').find('.comments-list');
     var postIndex = $(this).closest('.post').index();
     var commentIndex = $(this).closest('.comment').index();
@@ -159,22 +159,25 @@ $posts.on('click', '.remove-comment', function() {
 
 
 //Toggle the shopping-cart on/off
-$('.view-cart').on('click', function() {
+$('.view-cart').on('click', function () {
     shoppingCart = $('.shopping-cart');
     shoppingCart.toggle();
 });
 
-var slideIndex = 0;
+var myIndex = 0;
 carousel();
 
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+       x[i].style.display = "none";  
     }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 7000); // Change image every 2 seconds
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 7000);    
 }
+
+
+
