@@ -9,9 +9,13 @@ body {
 nav li {
     display: inline-block;
 }
+.navbar-default { 
+    background-color: #283e4a;
+    border-color: #283e4a;
+}
 
 nav {
-    background-color: green;
+    background-color: #283e4a;
     position: fixed;
     width: 100%;
     top: 0;
@@ -25,8 +29,8 @@ nav ul {
 nav li a {
     line-height: 50px;
     text-decoration: none;
-    color: #999;
-    font-size: 11px;
+    color: #337ab7;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0 18px;
@@ -61,12 +65,14 @@ nav li a {
     display: block;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 320px;
     margin-right: 17%;
-    padding: 60px 16px;
+    padding: 20px 16px;
     font-size: 22px;
-    margin-top: 1.5%;
+    margin-top: 30%;
     z-index: 2;
+    background: #337ab7;
+    color:white;
 }
 
 .mySlides {
@@ -82,7 +88,9 @@ nav li a {
     height: 41px;
     font-size: 16px;
     overflow: hidden;
-    background-color: #f5f5f5;
+    /* background-color: #232323; */
+    color:black;
+    background:transparent;
 }
 
 .slider div,
