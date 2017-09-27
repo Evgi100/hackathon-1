@@ -130,8 +130,16 @@ nav li a {
     vertical-align: middle;
 }
 
-.modal-input {
+.modal-input{
     margin-bottom: 10px;
+}
+
+#new-routine {
+    width: 290px;
+}
+
+ webkit-#new-routine-placeholder{
+    position: absolute; top: 50px; left: 0;
 }
 
 .challenge {

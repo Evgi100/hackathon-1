@@ -47,7 +47,7 @@ function addPost(newStory) {
         url: '/post',
         data: newStory,
         success: function (data) {
-            posts.push(data);
+            stories.push(data);
             _renderPosts();
         },
         error: function (jqXHR, textStatus, errorThrown) {
@@ -79,7 +79,7 @@ function _renderPosts() {
     for (var i = 0; i < stories.length; i++) {
         var newHTML = template(stories[i]);
         $stories.append(newHTML);
-        _renderComments(i)
+        // _renderComments(i)
     }
 }
 
