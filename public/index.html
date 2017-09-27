@@ -22,16 +22,17 @@
 </header>
      
  <body>
-  <div class="w3-content w3-section " style="max-width:500px ">
-    <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/372098/pexels-photo-372098.jpeg "></img>
-    <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/40815/youth-active-jump-happy-40815.jpeg "></img>
-    <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/33343/building-joy-planning-plans.jpg "></img>
-    <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/307791/pexels-photo-307791.jpeg "></img>
-    <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/237593/pexels-photo-237593.jpeg "></img>
-    <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/261630/pexels-photo-261630.jpeg "></img>
-    <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/21696/pexels-photo.jpg "></img>
 
+  <div class="w3-content w3-section " style="max-width:500px "
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/372098/pexels-photo-372098.jpeg "></img>
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/40815/youth-active-jump-happy-40815.jpeg "></img>
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/33343/building-joy-planning-plans.jpg "></img>
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/307791/pexels-photo-307791.jpeg "></img>
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/237593/pexels-photo-237593.jpeg "></img>
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/261630/pexels-photo-261630.jpeg "></img>
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/21696/pexels-photo.jpg "></img>
   </div>
+
     <div class="row vertical-center-row ">
         <div class="text-center col-md-4 col-md-offset-4 mainButton ">
             <div class="slider ">
@@ -52,36 +53,41 @@
             </div>
         </div>
     </div>
-    <!-- Trigger the modal with a button -->
-    <button type="button " class="btn btn-info btn-lg pull-right btn-item-form " data-toggle="modal " data-target="#myModal ">Add Your Success Story</button>
 
+    <div class="row vertical-center-row ">
+            <div class="text-center col-md-4 col-md-offset-4">
+    <!-- Trigger the modal with a button -->
+    <button type="submit" class="btn btn-info btn-lg pull-right btn-item-form" data-toggle="modal" data-target="#myModal">Add Your Success Story</button>
+</div>
+</div>
   
 
-    <!-- Modal -->
-    <div id="myModal " class="modal fade " role="dialog ">
-        <div class="modal-dialog ">
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog ">
 
-            <!-- Modal content-->
-            <div class="modal-content ">
-                <div class="modal-header ">
-                    <button type="button " class="close " data-dismiss="modal ">&times;</button>
-                    <h4 class="modal-title ">Share your story</h4>
-                </div>
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header"></div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Submit your item here</h4>
+            </div>
 
-                <div class="modal-body ">
-                    <input id="new-name " type="text " placeholder="Name "> <br>
-                    <input id="new-story-title " type="text " placeholder="Story Title "> <br>
-                    <input id="new-routine " type="text " placeholder="Describe the Challenge "> <br>
-                    <input id="new-story " type="text " placeholder="Tell your Story "> <br>
-                    <input id="new-email " type="text " placeholder="Email "> <br>
-                    <input id="new-phone number " type="text " placeholder="Phone "> <br>
-                </div>
-                <div class="modal-footer ">
-                    <button type="button " class="btn btn-default btn-submit-item " data-dismiss="modal ">Submit</button>
-                </div>
+            <div class="modal-body">
+                <input id="new-name" class="modal-input" type="text" placeholder="Name"> <br>
+                <input id="new-story-title" type="text" class="modal-input" placeholder="Story Title"> <br>
+                <input id="new-routine" class="modal-input challenge" type="text" placeholder="Describe the Challenge"> <br>
+                <input id="new-story" type="text" class="modal-input" placeholder="Tell your Story"> <br>
+                <input id="new-email" type="text" class="modal-input" placeholder="Email"> <br>
+                <input id="new-phone-number" type="text" class="modal-input" placeholder="Phone"> <br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-submit-item" data-dismiss="modal">Submit</button>
             </div>
         </div>
     </div>
+</div>
+
 
 
 
@@ -100,23 +106,23 @@
             </div>
         </div>
     </script>
-    <script id="comment-template " type="text/x-handlebars-template ">
-        <li class="comment ">{{text}} - {{user}}
+    <script id="comment-template" type="text/x-handlebars-template ">
+        <li class="comment">{{text}} - {{user}}
         </li>
     </script>
 
-    <script id="item-template " type="text/x-handlebars-template ">
-        <div class="col-md-4 ">
-            <div class="card-container ">
-                <div class="card item " item data-name="{{ name }} " data-price="{{ price }} ">
-                    <div class="pricebox ">
-                        <p class="price "> ${{ price }} </p>
+    <script id="item-template" type="text/x-handlebars-template ">
+        <div class="col-md-4">
+            <div class="card-container">
+                <div class="card item" item data-name="{{ name }} "data-price="{{ price }} ">
+                    <div class="pricebox">
+                        <p class="price"> ${{ price }} </p>
                     </div>
-                    <div class="buybox ">
-                        <p class="add-to-cart "> ADD TO CART </p>
+                    <div class="buybox">
+                        <p class="add-to-cart"> ADD TO CART </p>
                     </div>
-                    <div class="card-inner ">
-                        <img src="{{ picture }} " class="proimage " />
+                    <div class="card-inner">
+                        <img src="{{ picture }}" class="proimage" />
                     </div>
                 </div>
             </div>

@@ -52,10 +52,15 @@ nav li a {
 .comments-container {
     display: none;
 }
-
+.row {
+    margin-top: 10px;
+}
 .btn-item-form {
-    width: 29%;
-    margin-right: 35.5%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin-right: 17%;
     padding: 60px 16px;
     font-size: 22px;
     margin-top:1.5%;
@@ -99,4 +104,11 @@ nav li a {
 }
 .vertical-center-row {
     vertical-align: middle;
+}
+
+.modal-input {
+    margin-bottom: 10px;
+}
+.challenge {
+    height: 100px;
 }
