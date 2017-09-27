@@ -75,7 +75,7 @@ nav li a {
     height: 100%;
     top: 50px;
     left: 0px;
-    z-index: 0;
+    z-index: -1;
 }
 
 .slider {
@@ -131,8 +131,8 @@ nav li a {
 
 .main-footer {
     text-align: center;
-    padding: 2em 0;
-    background: #d9e4ea;
+    padding: 10px 0px;
+    background: #283e4a;
 }
 
 .wrap {
@@ -141,3 +141,24 @@ nav li a {
 
 
 /*Sticky Footer is making sure that the footer is on the bottom of the page.  the 100 viewpoint height is 1% of the page.  the 89px is the size of the actual footer.  Therefore, for this formula in the future, make sure you use the size of the footer.  */
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    color:#337ab7;
+}
+.Social-Icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    display: inline-block;
+}
+.contact-info li a {
+    font-size: 20px;
+}
