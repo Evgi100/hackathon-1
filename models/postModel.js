@@ -20,6 +20,7 @@ var storySchema = new Schema({
     story:String,
     email:String,
     phone:String,
+    video:String,
     comments: [commentSchema],
 
 });
