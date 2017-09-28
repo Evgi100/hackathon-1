@@ -100,7 +100,6 @@ function _renderPosts() {
 _fetchData();
 
 var myIndex = 0;
-carousel();
 
 function carousel() {
     var i;
@@ -113,3 +112,4 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 7000);    
 }
+carousel();
