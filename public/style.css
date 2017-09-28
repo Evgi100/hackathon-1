@@ -76,7 +76,7 @@ nav li a {
 
 .slider {
     margin-top:50px;
-    height: 100px;
+    height: 120px;
     font-size: 16px;
     overflow: hidden;
     /* background-color: #232323; */
@@ -93,7 +93,9 @@ nav li a {
 .slider div {
     animation: slide 10s 2s infinite;
 }
-
+.slider div h1{
+    font-size: 25px;
+}
 @keyframes slide {
     0% {
         margin-top: 0;
@@ -163,5 +165,7 @@ h3 {
 .contact-info li a {
     font-size: 20px;
 }
-video
+ {
+  
+}
 
