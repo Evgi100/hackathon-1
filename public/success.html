@@ -10,55 +10,61 @@
     <link href="style.css" rel="stylesheet">
     <title>SUCCESS STORIES</title>
 </head>
-<header>
-
-</header>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top"> 
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="index.html">Add Story</a></li>
-                    <li><a href="#contact-us">Contact US</a></li>
-                    <li><a href="#search">Search</a></li>
-                </ul>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="index.html">Add Story</a></li>
+            <li><a href="#contact-us">Contact US</a></li>
+            <li><a href="#search">Search</a></li>
+        </ul>
     </nav>
     <div class="wrap">
-        
-       
-        
-            <!-- <section class="stories">Success Stories</section> -->
+
+
+
+        <!-- <section class="stories">Success Stories</section> -->
     </div>
     <footer class="main-footer contact-us" id="contact-us">
         <h3>Contact Us</h3>
         <ul class="contact-info">
             <li class="phone"> <a href="tel:+972-58-442-9192"> <img src="phone.png" alt="Phone Logo"  class="Social-Icon">Phone Number</a></li>
-            <li class="mail"> <a href="mailto:amz61@msn.com"><img src="mail.png" alt="Email Logo"  class="Social-Icon">Email</a></li>  
+            <li class="mail"> <a href="mailto:amz61@msn.com"><img src="mail.png" alt="Email Logo"  class="Social-Icon">Email</a></li>
             <li><a href="https://www.linkedin.com/in/yitzchak-andrew-zeitler/" target="_blank"><img src="LinkedIn.png" alt="LinkedIn Logo" class="Social-Icon">LinkedIn</a></li>
-         </ul>
+        </ul>
     </footer>
-        <script id="post-template " type="text/x-handlebars-template ">
-            <div class="post " data-id={{_id}}>{{name}}-{{title}}-{{description}}-{{text}}-{{email}}-{{phone}}<a class="toggle-comments " href="# "> Comments </a>
-                <div></div>
-                <div class="comments-container ">
-                    <ul class="comments-list "></ul>
-                    <input class="form-control name " type="text " placeholder="Name " />
-                    <input class="form-control comment " type="text " placeholder="Comment " />
-                    <button type="button " class="btn btn-sm btn-primary add-comment ">Post Comment</button>
-                </div>
-            </div>
-        </script>
-        <script id="comment-template " type="text/x-handlebars-template ">
-            <li class="comment ">{{text}} - {{user}}
-            </li>
-        </script>
-        
 
-        <script src="jquery/dist/jquery.js "></script>
-        <script type="text/javascript " src="bootstrap/dist/js/bootstrap.js "></script>
-        <script src="handlebars/dist/handlebars.js "></script>
-        <script src="success.js "></script>
-        <script src="main.js "></script>
-        <script src="additem.js "></script>
+    <script id="post-template" type="text/x-handlebars-template">
+        <div class="post" data-id={{_id}}>
+            <h3>{{name}} Story of {{title}}</h3><br>
+            <p>{{challenge}}</p><br>
+            <p>{{story}}</p>
+            <p>{{email}}</p>
+            <p>{{number}}</p>
+
+        </div>
+        <div> <a class="toggle-comments " href="# "> Comments </a>
+            <div class="comments-container">
+                <ul class="comments-list "></ul>
+                <input class="form-control name " type="text " placeholder="Name " />
+                <input class="form-control comment " type="text" placeholder="Comment" />
+                <button type="button" class="btn btn-sm btn-primary add-comment">Post Comment</button>
+            </div>
+        </div>
+    </script>
+    <script id="comment-template" type="text/x-handlebars-template ">
+        <li class="comment">{{text}} - {{user}}
+        </li>
+    </script>
+
+
+    <script src="jquery/dist/jquery.js "></script>
+    <script type="text/javascript " src="bootstrap/dist/js/bootstrap.js "></script>
+    <script src="handlebars/dist/handlebars.js "></script>
+    <script src="success.js "></script>
+    <script src="main.js "></script>
+    <script src="additem.js "></script>
 </body>
+
 </html>
