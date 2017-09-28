@@ -1,4 +1,3 @@
-
 stories = [];
 
 $('a').click(function () {
