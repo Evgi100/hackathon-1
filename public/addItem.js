@@ -78,7 +78,7 @@ function _renderPosts() {
     var template = Handlebars.compile(source);
     for (var i = 0; i < stories.length; i++) {
         var newHTML = template(stories[i]);
-        $stories.append(newHTML);
+        $('.wrap').append(newHTML);
         // _renderComments(i)
     }
 }
