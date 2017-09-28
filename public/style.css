@@ -122,6 +122,10 @@ nav li a {
     vertical-align: middle;
 }
 
+.modal-body{
+    background-color: white;
+}
+
 .modal-input{
     margin-bottom: 10px;
 }
