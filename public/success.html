@@ -37,12 +37,15 @@
 
     <script id="post-template" type="text/x-handlebars-template">
         <div class="post" data-id={{_id}}>
-            <h3>{{name}} Story of {{title}}</h3><br>
-            <p>{{challenge}}</p><br>
-            <p>{{story}}</p>
-            <div class="video">
-            <iframe src="https://www.youtube.com/embed/{{video}}"
-            width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            <div class="row description vertical-center-row">
+            <div class="col-xs-1 col-md-1" ></div>
+                <div class="video col-xs-5 col-md-5">
+                    <iframe src="https://www.youtube.com/embed/{{video}}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class=" text-center col-xs-5 col-md-5">
+                    <h3>{{name}} Story of {{title}}</h3><br>
+                        <p>{{story}}</p>
+                </div>
             </div>
         </div>
         <div> <a class="toggle-comments " href="# "> Comments </a>
