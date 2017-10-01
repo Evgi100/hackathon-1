@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect(process.enw.CONNECTION_STRING ||'mongodb://localhost/wayToWinDB', function() {
+mongoose.connect(process.env.MONGOLAB_URI ||'mongodb://localhost/wayToWinDB', function() {
     console.log("DB connection established!!!");
 })
 
