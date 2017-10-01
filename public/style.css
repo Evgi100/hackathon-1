@@ -67,7 +67,7 @@ nav li a {
 .mySlides {
     position: fixed;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     top: 50px;
     left: 0px;
     z-index: -1;
@@ -130,10 +130,6 @@ nav li a {
     margin-bottom: 10px;
 }
 
-.stories {
-    background-color: white;
-    height: 200px;
-}
 
 .main-footer {
     text-align: center;
