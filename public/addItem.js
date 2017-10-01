@@ -38,7 +38,7 @@ function newItemObj() {
         comments: []
     }
     return itemObj;
-}
+} 
 
 // 
 function addPost(newStory) {
