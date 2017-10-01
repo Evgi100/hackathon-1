@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/wayToWinDB', function() {
+mongoose.connect(process.enw.CONNECTION_STRING ||'mongodb://localhost/wayToWinDB', function() {
     console.log("DB connection established!!!");
 })
 
@@ -46,6 +46,6 @@ app.post('/post/:id/comments', function(req, res) {
 
 
 
-app.listen(8000, function() {
+app.listen(process.env.PORT || 8000, function() {
     console.log("what do you want from me! get me on 8000 ;-)");
 });
