@@ -131,17 +131,11 @@ nav li a {
 }
 
 
-.main-footer {
+footer {
     text-align: center;
     padding: 10px 0px;
     background: #283e4a;
 }
-
-.wrap {
-    min-height: calc(100vh - 89px)
-}
-
-/*Sticky Footer is making sure that the footer is on the bottom of the page.  the 100 viewpoint height is 1% of the page.  the 89px is the size of the actual footer.  Therefore, for this formula in the future, make sure you use the size of the footer.  */
 
 ul li {
     list-style: none;
