@@ -161,13 +161,6 @@ h3 {
 .contact-info li a {
     font-size: 20px;
 }
- {
-  
-}
-
-.happy{
-    height:100px;
-}
 
 input:invalid {
     border: 2px solid red;
