@@ -31,7 +31,7 @@ function newItemObj() {
         name: $('#new-name').val(),
         title: $('#new-story-title').val(),
         challenge: $('#new-routine').val(),
-        story: $('#new-story').val(),
+        story: $('#new-story').text(),
         video:$('#new-video').val(),
         email: $('#new-email').val(),
         number: $('#new-phone-number').val(),
