@@ -169,3 +169,11 @@ h3 {
 .happy{
     height:100px;
 }
+
+input:invalid {
+    border: 2px solid red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }

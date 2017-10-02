@@ -12,14 +12,14 @@ var $stories = $(".stories");
 
 
 $('.btn-submit-item').on('click', function () {
-    if ($('#new-name').val() === "" && $('#new-story-title').val() === "" && $('#new-routine').val() === "" && $('#new-story').val() === "") {
-        alert("Please provide us with your story.  We would love to hear about it!");
+    if ($('#new-name').val() === "" && $('#new-story-title').val() === "" && $('#new-story').text() === "") {
+        alert("Please share your story with us.We would love to hear about it!");
     } else if ( $('#new-story-title').val() === "") {
         alert("Your story must have a title")
     } else if ($('#new-routine').val()==="") {
-        alert("Please provide us with your chalange story");
-    } else if ( $('#new-story').val() === ""){
         alert("Please provide us with your story");
+    } else if ( $('#new-email').val() === ""){
+        alert("Please enter a valid email adress");
     }else {
         var newItem = newItemObj();
         addPost(newItem)
@@ -31,7 +31,7 @@ function newItemObj() {
         name: $('#new-name').val(),
         title: $('#new-story-title').val(),
         challenge: $('#new-routine').val(),
-        story: $('#new-story').val(),
+        story: $('#new-story').text(),
         video:$('#new-video').val(),
         email: $('#new-email').val(),
         number: $('#new-phone-number').val(),
@@ -100,7 +100,7 @@ function _renderPosts() {
 _fetchData();
 
 var myIndex = 0;
-carousel();
+
 
 function carousel() {
     var i;
@@ -113,3 +113,5 @@ function carousel() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 7000);    
 }
+
+carousel();
