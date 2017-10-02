@@ -78,7 +78,7 @@ function _renderPosts() {
     var template = Handlebars.compile(source);
     for (var i = 0; i < stories.length; i++) {
         var newHTML = template(stories[i]);
-        $('.wrap').append(newHTML);
+        $('#stories').append(newHTML);
         // _renderComments(i)
     }
 }
@@ -123,12 +123,10 @@ function validateEmail(email) {
   
   function validate() {
     var email = $("#new-email").val();
-    if (validateEmail(email)) {
-     alert(email + " is valid :)");
-    } else {
+    if (validateEmail(!email)) {
       alert(email + " is not valid :(");
     }
     return false;
   }
   
-  $(".btn-submit-item").bind("click", validate);
+  $(".new-email").on("focusout", validate);

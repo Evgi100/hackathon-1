@@ -103,7 +103,7 @@ nav li a {
     justify-content: center;
     width: 320px;
     margin-right: 17%;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     padding: 20px 16px;
     font-size: 22px;
     margin-top: 50px;
@@ -168,4 +168,7 @@ input:invalid {
   
   input:valid {
     border: 2px solid black;
+  }
+  #stories{
+      margin-bottom: 10%;
   }
