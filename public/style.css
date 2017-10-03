@@ -153,7 +153,12 @@ h3 {
 .contact-info li a {
     font-size: 20px;
     color: white;
+ 
+}
+
+ul.contact-info {
     margin: 0 auto;
+    padding: 0;
 }
 
 input:invalid {
