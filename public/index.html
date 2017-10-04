@@ -19,80 +19,81 @@
             <li><a href="#add-story-btn">Add Your Story</a></li>
         </ul>
     </nav>
- 
 
 
-        <div class="w3-content w3-section" style="max-width:850px" >
+
+    <div class="w3-content w3-section" style="max-width:850px">
 
         <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/372098/pexels-photo-372098.jpeg">
-         
-            <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/372098/pexels-photo-372098.jpeg">
-            <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/40815/youth-active-jump-happy-40815.jpeg"></img>
-            <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/33343/building-joy-planning-plans.jpg"></img>
-            <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/307791/pexels-photo-307791.jpeg"></img>
-            <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/261630/pexels-photo-261630.jpeg"></img>
-            <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/21696/pexels-photo.jpg"></img>
+
+        <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/372098/pexels-photo-372098.jpeg">
+        <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/40815/youth-active-jump-happy-40815.jpeg"></img>
+        <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/33343/building-joy-planning-plans.jpg"></img>
+        <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/307791/pexels-photo-307791.jpeg"></img>
+        <img class="mySlides w3-animate-fading " src="https://static.pexels.com/photos/261630/pexels-photo-261630.jpeg"></img>
+        <img class="mySlides w3-animate-fading" src="https://static.pexels.com/photos/21696/pexels-photo.jpg"></img>
         </img>
     </div>
 
 
-        <div class="row vertical-center-row col-xs-12 col-xs-offset-0">
-            <div class="text-center  mainButton">
-                <div class="slider">
-                    <div>
-                        <h1>
-                          Success is going from failure to failure without losing your enthusiasm!
-                        </h1>
-                        <p>
-                            How I became a full-stack web developer.
-                        </p>
-                        <p>
-                            How I overcame my anxiety of speaking in front of crowds.
-                        </p>
-                        <p>
-                            How a shy guy met his beatiful wife.
-                        </p>
-                    </div>
+    <div class="row vertical-center-row col-xs-12 col-xs-offset-0">
+        <div class="text-center  mainButton">
+            <div class="slider">
+                <div>
+                    <h1>
+                        Success is going from failure to failure without losing your enthusiasm!
+                    </h1>
+                    <p>
+                        How I became a full-stack web developer.
+                    </p>
+                    <p>
+                        How I overcame my anxiety of speaking in front of crowds.
+                    </p>
+                    <p>
+                        How a shy guy met his beatiful wife.
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div id="add-story-btn" class="text-center row vertical-center-row col-xs-4 col-xs-offset-1 col-md-4 col-md-offset-4">
-            <div class="">
-
-                <!-- Trigger the modal with a button -->
-                <button type="submit" id="add-story" class="btn btn-info btn-lg btn-item-form" data-toggle="modal" data-target="#myModal ">Add Your Success Story</button>
-            </div>
-        </div>
-
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog ">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header"></div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Share your story here</h4>
-                </div>
-                <div class="modal-body">
-                    <input id="new-name" class="modal-input" type="text" placeholder="Your Name" required> <br>
-                    <input id="new-story-title" type="text" class="modal-input" placeholder="Story Title" required> <br>
-                    <textarea id="new-story" type="text" class="modal-input" placeholder="Tell Your Story " maxlength="255" required></textarea> <br>
-                    <input id="new-video" type="text" class="modal-input" placeholder="Import YouTube Video ID"><br>
-                    <input id="new-email" type="email" name="email" class="modal-input" placeholder="me@example.com" required> <br>
-                    <input id="new-phone-number" type="text" class="modal-input" placeholder="Phone"> <br>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-default btn-submit-item" data-dismiss="modal">Submit</button>
-                </div>
-            </div>
-        </div>
-  
     </div>
 
-    <section  id="stories">
+    <div id="add-story-btn" class="text-center row vertical-center-row col-xs-4 col-xs-offset-1 col-md-4 col-md-offset-4">
+        <div class="">
+
+            <!-- Trigger the modal with a button -->
+            <button type="submit" id="add-story" class="btn btn-info btn-lg btn-item-form" data-toggle="modal" data-target="#myModal ">Add Your Success Story</button>
+        </div>
+    </div>
+
+    <section id="stories">
 
     </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog ">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Share your story here</h4>
+            </div>
+            <div class="modal-body">
+                <input id="new-name" class="modal-input" type="text" placeholder="Your Name" required> <br>
+                <input id="new-story-title" type="text" class="modal-input" placeholder="Story Title" required> <br>
+                <textarea id="new-story" type="text" class="modal-input" placeholder="Tell Your Story " maxlength="255" required></textarea>                <br>
+                <input id="new-video" type="text" class="modal-input" placeholder="Import YouTube Video ID"><br>
+                <input id="new-email" type="email" name="email" class="modal-input" placeholder="me@example.com" required>                <br>
+                <input id="new-phone-number" type="text" class="modal-input" placeholder="Phone"> <br>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default btn-submit-item" data-dismiss="modal">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
     <footer class="navbar navbar-default navbar-fixed-bottom">
         <h3>Contact Us</h3>
         <ul class="contact-info">
@@ -105,11 +106,11 @@
     <script id="post-template" type="text/x-handlebars-template">
         <div class="post" data-id={{_id}}>
             <div class="row description vertical-center-row">
-            <div class="col-xs-1 col-md-1"></div>
-                <div class="video col-xs-5 col-md-5">
+            <!-- <div class="col-xs-1 col-md-1"></div> -->
+                <div class="video col-md-6 col-lg-4">
                     <iframe src="https://www.youtube.com/embed/{{video}}" width="560" height="315" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="text-center col-xs-5 col-md-5">
+                <div class="text-center col-md-6 col-lg-6 stories-text">
                     <h1>{{name}}'s Story about {{title}}</h1><br>
                         <p>{{story}}</p>
                 </div>
