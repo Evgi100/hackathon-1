@@ -2,7 +2,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGOLAB_URI ||'mongodb://localhost/wayToWinDB', function() {
+//  Add new conection for heroku DB
+mongoose.connect(process.env.CONNECTION_STRING ||'mongodb://localhost/wayToWinDB', function() {
     console.log("DB connection established!!!");
 })
 

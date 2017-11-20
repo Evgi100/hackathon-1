@@ -30,11 +30,10 @@ function newItemObj() {
     var itemObj = {
         name: $('#new-name').val(),
         title: $('#new-story-title').val(),
-        challenge: $('#new-routine').val(),
-        story: $('#new-story').text(),
+        story: $('#new-story').val(),
         video:$('#new-video').val(),
         email: $('#new-email').val(),
-        number: $('#new-phone-number').val(),
+        phone: $('#new-phone-number').val(),
         comments: []
     }
     return itemObj;
@@ -44,7 +43,7 @@ function newItemObj() {
 function addPost(newStory) {
     $.ajax({
         method: "POST",
-        url: '/post',
+        url: '/post',  
         data: newStory,
         success: function (data) {
             stories.push(data);
@@ -62,7 +61,6 @@ function _fetchData() {
         url: '/post',
         success: function (data) {
             stories = (data);
-            console.log(stories)
             _renderPosts();
         },
         error: function (jqXHR, textStatus, errorThrown) {
