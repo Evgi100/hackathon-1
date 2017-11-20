@@ -7,7 +7,7 @@ $('a').click(function () {
     return false;
 });
 
-var $stories = $(".stories");
+var $stories = $("#stories");
 
 
 
@@ -82,20 +82,6 @@ function _renderPosts() {
         // _renderComments(i)
     }
 }
-
-
-// function _renderComments(postIndex) {
-//     var post = $(".post")[postIndex];
-//     $commentsList = $(post).find('.comments-list')
-//     $commentsList.empty();
-//     var source = $('#comment-template').html();
-//     var template = Handlebars.compile(source);
-//     for (var i = 0; i < posts[postIndex].comments.length; i++) {
-//         var newHTML = template(posts[postIndex].comments[i]);
-//         $commentsList.append(newHTML);
-//         console.log(newHTML)
-//     }
-// }
 
 _fetchData();
 

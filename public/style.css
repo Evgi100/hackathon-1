@@ -139,10 +139,9 @@ ul li {
 }
 
 h3 {
- 
     margin-bottom: 20px;
     margin-top: 0px;
-    color:#337ab7;
+    color:white;
 }
 
 .Social-Icon {
@@ -153,6 +152,13 @@ h3 {
 }
 .contact-info li a {
     font-size: 20px;
+    color: white;
+ 
+}
+
+ul.contact-info {
+    margin: 0 auto;
+    padding: 0;
 }
 
 input:invalid {
@@ -164,10 +170,34 @@ input:invalid {
   }
   #stories{
       margin-bottom: 10%;
+
       margin-top:21%
   }
 
 
   .video {
       margin-left: 2.5%
+
   }
+
+  @media screen and (max-width: 600px){
+
+    .Social-Icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        display: inline-block;
+    }
+
+    .contact-info li a {
+        font-size: 15px;
+        color:white;
+        margin: 0 auto;
+    }
+
+h3 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color:white;
+}
+
