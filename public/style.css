@@ -170,6 +170,14 @@ input:invalid {
   }
   #stories{
       margin-bottom: 10%;
+
+      margin-top:21%
+  }
+
+
+  .video {
+      margin-left: 2.5%
+
   }
 
   @media screen and (max-width: 600px){
@@ -193,4 +201,3 @@ h3 {
     color:white;
 }
 
-  }
